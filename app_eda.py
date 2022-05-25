@@ -5,7 +5,7 @@ import seaborn as sns
 
 def run_eda() :
     df = pd.read_csv('data/divorce_data.csv', sep=';')
-    st.subheader('이혼관련 테스트 설문')
+    st.subheader('이혼 가능성 데이터 분석')
     st.subheader('각 문항에 대한 답은 0 - 5 점으로 기록')
     st.dataframe(df)
 
@@ -30,12 +30,16 @@ def run_eda() :
     for i in range(1,54+1) :
         col_list.append('Q' + str(i))
     
-    col_choice = st.selectbox('문항의 내용 보기', col_list)
+    # col_choice = st.selectbox('문항의 내용 보기', col_list)
 
+    # if len(col_choice) != 0 :
+    #     q_context = q.loc[q['Question'] == col_choice, 'context'].values[0]
+    #     st.subheader(col_choice + ' : '+ q_context)
+    col_choice = st.multiselect('문항의 내용 보기', col_list)
     if len(col_choice) != 0 :
-        q_context = q.loc[q['Question'] == col_choice, 'context'].to_string()[1:]
-        st.subheader(col_choice + ' : '+ q_context)
-
+        for i in range(len(col_choice)) :
+            q_context = q.loc[q['Question'] == col_choice[i], 'context'].values[0]
+            st.subheader(col_choice[i] + ' : '+ q_context)
 
     choice_corr_list = st.multiselect('두개 문항의 상관관계 보기', col_list)
     if st.button('결과보기') :
