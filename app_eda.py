@@ -6,7 +6,7 @@ import seaborn as sns
 def run_eda() :
     df = pd.read_csv('data/divorce_data.csv', sep=';')
     st.subheader('이혼 가능성 데이터 분석')
-    st.subheader('각 문항에 대한 답은 0 - 5 점으로 기록')
+    st.subheader('각 문항에 대한 답은 0 - 4 점으로 기록')
     st.dataframe(df)
 
     q = pd.read_csv('data/question.csv')
