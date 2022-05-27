@@ -41,16 +41,16 @@ def run_eda() :
             q_context = q.loc[q['Question'] == col_choice[i], 'context'].values[0]
             st.subheader(col_choice[i] + ' : '+ q_context)
 
-    # 두개 문항을 선택시 regplot과 상관관계 보여준다.
-    choice_corr_list = st.multiselect('두개 문항의 상관관계 보기', col_list)
+    # 문항을 선택시 regplot과 상관관계 보여준다.
+    choice_corr_list = st.multiselect('문항 간의 상관관계 보기', col_list)
     if st.button('결과보기') :
-        if len(choice_corr_list) == 2:
-            fig2 = plt.figure()
-            sns.regplot(data = df, x = choice_corr_list[0], 
-                        y = choice_corr_list[1])
-            st.pyplot(fig2)
+        if len(choice_corr_list) > 1:
             st.text('상관계수')
-            st.dataframe(df[choice_corr_list].corr())
+            fig2 = plt.figure()
+            sns.heatmap(df[choice_corr_list].corr(), 
+                            annot=True, cmap='Blues')
+            st.pyplot(fig2)
+
         else :
-            st.warning('두개를 선택하지 않았습니다! ')
+            st.warning('두개 이상을 선택하지 않았습니다! ')
     
