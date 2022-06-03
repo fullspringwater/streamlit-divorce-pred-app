@@ -25,6 +25,7 @@ def run_eda() :
     divorce_rate.rename( index = {0 : 'Not Divorce',
                               1 : 'Divorce'} , inplace = True)
     plt.subplot(1,3,3)
+    # plt.figure(figsize=(5,4))
     plt.pie(divorce_rate, autopct = '%.1f', labels = divorce_rate.index,
        startangle = 90, wedgeprops= {'width' : 0.7})
     st.pyplot(fig1)
