@@ -5,6 +5,7 @@ from PIL import Image
 def run_home() :
     logo = Image.open('data/logo.jpg')
     st.image(logo)
+
     
     st.title('이혼 가능성 예측하기 프로젝트')
     st.subheader('왼쪽 메뉴의 EDA')
