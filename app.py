@@ -4,8 +4,10 @@ from app_eda import run_eda
 from app_home import run_home
 from streamlit_option_menu import option_menu
 
+
 def main() : 
     menu = ['Home', 'EDA', 'Divorce Test']
+
 
     with st.sidebar:
         menu_choice = option_menu("Menu", menu,
