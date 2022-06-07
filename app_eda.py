@@ -30,7 +30,7 @@ def run_eda() :
        startangle = 90, wedgeprops= {'width' : 0.7})
     st.pyplot(fig1)
 
-    # question의 분항들을 받아온다
+    # question을 받아온다
     col_list= []
     for i in range(1,54+1) :
         col_list.append('Q' + str(i))
