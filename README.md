@@ -110,4 +110,4 @@ pip install joblib
 
 ### 테스트
   
-![divorce_app_test](https://user-images.githubusercontent.com/105832330/172305357-80af4513-bbd7-4796-b9c0-2d6be1a3b088.gif)
+![divorce_app_test gif](https://user-images.githubusercontent.com/105832330/172310503-95273751-182f-4f89-88ac-ec65a926fbbf.gif)
