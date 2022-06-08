@@ -5,7 +5,7 @@
 
 ✅ 데이터 셋에 대한 EDA 결과를 볼 수 있습니다.
 
-
+✅ 예측은 Dicision Tree 알고리즘을 이용했습니다.
 ## 📘 Dataset Source
 
  👉 출처 : https://www.kaggle.com/datasets/csafrit2/predicting-divorce
