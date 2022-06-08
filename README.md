@@ -99,6 +99,8 @@ pip install seaborn
 
 <img width="1174" alt="dicisiontree2" src="https://user-images.githubusercontent.com/105832330/172305218-1421488a-4090-4604-a827-93982723db82.png">
 
+✅ 정확도 & Cunfusion Matrix
+![divorce_accuracy](https://user-images.githubusercontent.com/105832330/172576363-ff14b197-baea-4ed9-979b-1dc9a0bf0952.JPG)
 
 
 
