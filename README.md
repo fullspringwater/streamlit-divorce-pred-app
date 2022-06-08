@@ -68,7 +68,7 @@
 ##
 ## 🛠 Environment
 
-✅ Python 3.7
+✅ Language : Python 3.7
 
 ##
 ## 🔨 Installation
