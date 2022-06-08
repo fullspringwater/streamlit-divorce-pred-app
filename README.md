@@ -114,3 +114,7 @@ pip install seaborn
 ### 테스트
   
 ![divorce_app_test gif](https://user-images.githubusercontent.com/105832330/172310503-95273751-182f-4f89-88ac-ec65a926fbbf.gif)
+
+### Url
+
+http://ec2-3-39-230-35.ap-northeast-2.compute.amazonaws.com:8501/
