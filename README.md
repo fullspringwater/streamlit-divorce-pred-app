@@ -85,6 +85,9 @@ pip install streamlit-option-menu
 pip install joblib
 ```
 
+```
+pip install seaborn
+```
 
 
 
