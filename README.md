@@ -122,4 +122,4 @@ pip install seaborn
 
 ### Url
 
-http://ec2-3-39-230-35.ap-northeast-2.compute.amazonaws.com:8501/
+
